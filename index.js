@@ -19,14 +19,14 @@ class Formatter {
     return s.replace(/[^A-Za-z-'\s]/gi, "");
   }
   static titleize(s) {
-    const newSentance = [];
+    const newSentence = [];
     const wordArr = s.split(" ");
     wordArr.forEach(word => {
       debugger;
       if (!notCapWord.includes(word.toLowerCase()) || wordArr[0] === word)
-        newSentance.push(this.capitalize(word));
-      else newSentance.push(word);
+        newSentence.push(this.capitalize(word));
+      else newSentence.push(word);
     });
-    return newSentance.join(" ");
+    return newSentence.join(" ");
   }
 }
